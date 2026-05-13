@@ -1,0 +1,146 @@
+### resource.http
+
+@baseUrl = http://localhost:3000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYwMjMwNzU0LCJleHAiOjE3NjAyMzEzNTR9.qdGzduLMcwKWABGi0GzoLSLrxt74Ua_xO5wjAIvmJOM
+
+### ================== RUTAS SIN AUTENTICACIÓN ==================
+
+## Obtener todos los recursos (SIN token)
+GET {{baseUrl}}/api/resources/public
+
+### Obtener recurso por ID (SIN token)
+GET {{baseUrl}}/api/resources/public/5
+
+### Eliminar un recurso físicamente (SIN token)
+DELETE {{baseUrl}}/api/resources/public/1
+
+### Eliminar un recurso lógicamente (SIN token)
+DELETE {{baseUrl}}/api/resources/public/2/logic
+
+```http id="q43s9f"
+### ================== CAR ==================
+
+### Mostrar cars (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/car/public",
+  "method": "GET",
+  "is_active": "ACTIVE"
+}
+
+### Mostrar car por ID (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/car/public/:id",
+  "method": "GET",
+  "is_active": "ACTIVE"
+}
+
+### Crear un nuevo car (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/car/public",
+  "method": "POST",
+  "is_active": "ACTIVE"
+}
+
+### Actualizar un car (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/car/public/:id",
+  "method": "PATCH",
+  "is_active": "ACTIVE"
+}
+
+### Eliminar un car físicamente (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/car/public/:id",
+  "method": "DELETE",
+  "is_active": "ACTIVE"
+}
+
+### Eliminar un car lógicamente (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/car/public/:id/logic",
+  "method": "DELETE",
+  "is_active": "ACTIVE"
+}
+
+
+
+### ================== TUITION ==================
+
+### Mostrar tuitions (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/tuition/public",
+  "method": "GET",
+  "is_active": "ACTIVE"
+}
+
+### Mostrar tuition por ID (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/tuition/public/:id",
+  "method": "GET",
+  "is_active": "ACTIVE"
+}
+
+### Crear un nuevo tuition (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/tuition/public",
+  "method": "POST",
+  "is_active": "ACTIVE"
+}
+
+### Actualizar un tuition (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/tuition/public/:id",
+  "method": "PATCH",
+  "is_active": "ACTIVE"
+}
+
+### Eliminar un tuition físicamente (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/tuition/public/:id",
+  "method": "DELETE",
+  "is_active": "ACTIVE"
+}
+
+### Eliminar un tuition lógicamente (SIN token)
+POST {{baseUrl}}/api/resources/public
+Content-Type: application/json
+
+{
+  "path": "/api/tuition/public/:id/logic",
+  "method": "DELETE",
+  "is_active": "ACTIVE"
+}
+```

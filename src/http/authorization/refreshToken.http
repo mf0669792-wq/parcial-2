@@ -1,0 +1,12 @@
+
+### refreshToken.http
+
+@baseUrl = http://localhost:3000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYwMjI1ODY5LCJleHAiOjE3NjAyMjY0Njl9.6zFU4gpLvKAmUX0_dvmgc_YNQUtiJKlYriwFR4fJcQ4
+
+### ================== RUTAS SIN AUTENTICACIÓN ==================
+
+### Obtener todos los refresh tokens
+GET {{baseUrl}}/refresk-token
+
+### ================== RUTAS CON AUTENTICACIÓN ==================

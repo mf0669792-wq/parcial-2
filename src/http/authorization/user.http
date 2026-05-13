@@ -1,0 +1,25 @@
+### user.http
+
+@baseUrl = http://localhost:3000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYwMjI1ODY5LCJleHAiOjE3NjAyMjY0Njl9.6zFU4gpLvKAmUX0_dvmgc_YNQUtiJKlYriwFR4fJcQ4
+
+### Esto es solo como ejemplo academico, dado que este modelo lo debemos manejar posteriormente con Auth
+### ================== RUTAS SIN AUTENTICACIÓN ==================
+
+### Obtener todos los usuarios
+GET {{baseUrl}}/api/users
+
+### Crear usuario (usando el mismo endpoint)
+POST {{baseUrl}}/api/users
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "email": "newuser@example.com",
+  "password": "123456",
+  "is_active": "ACTIVE",
+  "avatar": "avatar.jpg"
+}
+
+### ================== RUTAS CON AUTENTICACIÓN ==================
+
